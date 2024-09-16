@@ -6,7 +6,7 @@ const FormMessage = () => {
 
   return (
     <div>
-      <div className="mx-4 lg:mx-64 my-10 lg:my-36 flex flex-col lg:flex-row items-center justify-center lg:justify-between">
+      <div className="mx-4 lg:mx-64 my-36 flex flex-col lg:flex-row items-center justify-center lg:justify-between">
         <div className="mb-6 lg:mb-0">
           <img className="w-32 lg:w-full" src={send} alt="send" />
         </div>
