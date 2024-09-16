@@ -1,5 +1,4 @@
 import Clinica from '../../assets/images/Clinica.png';
-import './partials/index.css';
 
 const AboutUs = () => {
   return (
