@@ -1,0 +1,35 @@
+.glow-border {
+  position: relative;
+  padding: 20px;
+  border-radius: 70px;
+  background-color: #fff;
+  border: 2px solid transparent;
+  transition: border 0.3s ease-in-out;
+}
+
+.glow-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 70px;
+  background: linear-gradient(45deg, #ff007f, #35acb4, #35acb4, #35acb4);
+  background-size: 200% 200%;
+  z-index: -1;
+  filter: blur(4px);
+  animation: glow 500ms ease infinite;
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
